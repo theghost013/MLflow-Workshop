@@ -1,18 +1,18 @@
 # Load variables from .env file
-include config.env
-export
+# include config.env
+# export
 
 # Define targets
 init:
 	@echo "Creating Python virtual environment 'mlflow_env'"; \
-    python3 -m venv ../ENVS/mlflow_env; \
+    python3 -m venv mlflow_env; \
     @echo "Activating Python virtual environment 'mlflow_env'"; \
-    . ../ENVS/mlflow_env/bin/activate; \
+    . mlflow_env/bin/activate; \
     @echo "Installing requirements"; \
     pip install -r requirements.txt; \
     echo "Initialization complete"
 install:
-	. ../ENVS/mlflow_env/bin/activate; \
+	. mlflow_env/bin/activate; \
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 

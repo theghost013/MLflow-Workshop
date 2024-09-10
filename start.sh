@@ -1,2 +1,2 @@
 #!/bin/bash
-source ../ENVS/mlflow_env/bin/activate
+source mlflow_env/bin/activate
