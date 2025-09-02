@@ -2,3 +2,4 @@ mlflow_env/
 *.png
 mlartifacts/
 mlruns/
+creditcard.csv
