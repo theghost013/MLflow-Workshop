@@ -1,2 +1,4 @@
 mlflow_env/
 *.png
+mlartifacts/
+mlruns/
